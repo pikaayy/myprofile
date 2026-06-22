@@ -348,13 +348,20 @@ h1 {
 }
 
 .certificate-gallery img {
-  height: 160px;
-  width: auto;
-  object-fit: cover;
+  width: 250px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
   flex-shrink: 0;
+}
+
+/* Cropped thumbnail only for certificates that need it */
+.certificate-gallery img.crop-img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .certificate-gallery img:hover {
