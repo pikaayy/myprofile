@@ -337,9 +337,20 @@ h1 {
   padding: 10px 0;
 }
 
+.certificate-gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
 .certificate-gallery img {
-  width: 200px;
-  height: auto;
+  height: 160px;
+  width: auto;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
